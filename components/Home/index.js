@@ -18,8 +18,6 @@ const index = () => {
       });
   }, []);
 
-  console.log(users);
-
   return (
     <Box
       sx={{

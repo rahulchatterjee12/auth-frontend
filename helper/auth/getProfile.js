@@ -12,5 +12,4 @@ const getProfile = async () => {
     console.error(error);
   }
 };
-
 export default getProfile;

@@ -19,9 +19,11 @@ const Navbar = () => {
   const user = useSelector((state) => state.user.user);
 
   useEffect(() => {
-    getProfile().then((res) => {
-      if (res) dispatch(setUser(res.data.user));
-    });
+    if (user === null) {
+      getProfile().then((res) => {
+        if (res) dispatch(setUser(res.data.user));
+      });
+    }
   }, []);
 
   return (
@@ -48,7 +50,7 @@ const Navbar = () => {
                     d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
                   />
                 </svg>
-                <span className="font-bold">Code Editor</span>
+                <span className="font-bold">Auth App</span>
               </Link>
             </div>
           </div>

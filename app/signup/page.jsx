@@ -38,7 +38,7 @@ const page = () => {
           href="/"
           className="flex items-center mb-6 text-2xl font-semibold text-gray-900 "
         >
-          Code Editor
+          Auth App
         </Link>
         <div className="w-full bg-white rounded-lg shadow  md:mt-0 sm:max-w-md xl:p-0  ">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -125,30 +125,6 @@ const page = () => {
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 "
                   required
                 />
-              </div>
-              <div>
-                <label
-                  htmlFor="conformPassword"
-                  className="block mb-2 text-sm font-medium text-gray-900 "
-                >
-                  Conform Password
-                </label>
-                <input
-                  type="password"
-                  name="conformPassword"
-                  id="conformPassword"
-                  placeholder="••••••••"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 "
-                  required
-                />
-              </div>
-              <div className="flex items-center justify-between">
-                <a
-                  href="#"
-                  className="text-sm font-medium text-blue-600 hover:underline "
-                >
-                  Forgot password?
-                </a>
               </div>
               <button
                 type="submit"
